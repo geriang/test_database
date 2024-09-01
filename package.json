@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "forms": "^1.3.2",
+    "hbs": "^4.2.0",
+    "knex": "^3.1.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.4",
+    "session-file-store": "^1.5.0",
+    "wax-on": "^1.2.2"
+  },
+  "name": "test_database",
+  "version": "1.0.0",
+  "description": "Test development of a database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon --ignore sessions"
+  },
+  "author": "Geri Ang",
+  "license": "ISC"
+}
