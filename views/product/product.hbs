@@ -10,28 +10,31 @@
             <th>Product ID</th>
             <th>Product Code</th>
             <th>Product Name</th>
-            <th>Discounted Price</th>
-            <th>Price</th>
+            <th>Minimum Price</th>
+            <th>Stock Price</th>
+            <th>Adhoc Price</th>
+            <th>Unit of Measurement</th>
+            <th>Product Colour</th>
+            <th>Create at</th>
+            <th>Updated at</th>
             <!-- Add other relevant columns here -->
         </tr>
     </thead>
     <tbody>
-        {{!-- {{#each usersRecords}}
+        {{#each productRecords}}
         <tr>
-            <td>{{this.attributes.id}}</td>
-            <td>{{this.attributes.username}}</td>
-            <td>{{this.attributes.firstName}}</td>
-            <td>{{this.attributes.lastName}}</td>
-            <td>{{this.attributes.email}}</td>
+            <td>{{this.id}}</td>
+            <td>{{this.productCode}}</td>
+            <td>{{this.productName}}</td>
+            <td>{{this.minPrice}}</td>
+            <td>{{this.stockPrice}}</td>
+            <td>{{this.adhocPrice}}</td>
+            <td>{{this.uom}}</td>
+            <td>{{this.productColour}}</td>
+            <td>{{this.created_at}}</td>
+            <td>{{this.updated_at}}</td>
         </tr>
-        {{/each}} --}}
-        <tr>
-            <td>01</td>
-            <td>MABC0123</td>
-            <td>Medicine for Fever</td>
-            <td>$12.54</td>
-            <td>$15.00</td>
-        </tr>
+        {{/each}}
     </tbody>
 </table>
 

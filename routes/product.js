@@ -1,8 +1,18 @@
 const express = require('express');
 const router = express.Router();
+const ProductService = require('../services/productService')
+const productSvc = new ProductService()
 
-router.get('/', (req, res) => {
-    res.render('product/product')
+router.get('/', async (req, res) => {
+    try{
+        const productRecords = await productSvc.displayAllProduct()
+        res.render('product/product', {productRecords})
+
+    }catch(error){
+        console.log(error)
+        res.status(500).send("Error Retriving Product Data")
+    }
+   
 });
 
 // router.get('/product', async (req, res) => {

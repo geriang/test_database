@@ -15,4 +15,4 @@ const knex = require('knex')({
 // Bind all Objection.js models to the Knex instance
 Model.knex(knex);
 
-module.exports = knex;
+module.exports = { knex, Model};
