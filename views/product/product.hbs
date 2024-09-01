@@ -1,0 +1,40 @@
+{{#extends 'base'}}
+
+{{#block 'content'}}
+
+<h1>Product List</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Code</th>
+            <th>Product Name</th>
+            <th>Discounted Price</th>
+            <th>Price</th>
+            <!-- Add other relevant columns here -->
+        </tr>
+    </thead>
+    <tbody>
+        {{!-- {{#each usersRecords}}
+        <tr>
+            <td>{{this.attributes.id}}</td>
+            <td>{{this.attributes.username}}</td>
+            <td>{{this.attributes.firstName}}</td>
+            <td>{{this.attributes.lastName}}</td>
+            <td>{{this.attributes.email}}</td>
+        </tr>
+        {{/each}} --}}
+        <tr>
+            <td>01</td>
+            <td>MABC0123</td>
+            <td>Medicine for Fever</td>
+            <td>$12.54</td>
+            <td>$15.00</td>
+        </tr>
+    </tbody>
+</table>
+
+{{/block}}
+
+{{/extends}}

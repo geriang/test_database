@@ -17,6 +17,7 @@ require('dotenv').config();
 
 // for importing in routes
 const landingRoutes = require('./routes/landing');
+const productRoutes = require('./routes/product');
 // const adminRoutes = require('./routes/admin');
 // const loginRoutes = require('./routes/routes/login')
 // const logoutRoutes = require('./routes/routes/logout')
@@ -104,7 +105,7 @@ App.use(function (req, res, next) {
 
 // register routes
 App.use('/', landingRoutes);
-// App.use('/admin', adminRoutes);
+App.use('/product', productRoutes);
 // App.use('/login', loginRoutes);
 // App.use('/logout', logoutRoutes)
 
