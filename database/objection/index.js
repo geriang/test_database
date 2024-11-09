@@ -1,5 +1,7 @@
 const { Model } = require('objection');
-const knex = require('knex')({
+require('dotenv').config();
+
+const dbClient = require('knex')({
     client: process.env['DB_CLIENT'],
     connection: {
       host: process.env['DB_HOST'] || '127.0.0.1',
@@ -13,6 +15,6 @@ const knex = require('knex')({
     }
   });
 // Bind all Objection.js models to the Knex instance
-Model.knex(knex);
+Model.knex(dbClient);
 
-module.exports = { knex, Model};
+module.exports = {dbClient, Model};

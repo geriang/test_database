@@ -1,10 +1,9 @@
-const Product_Table = require("../model/index");
+const ProductTable = require("../model/ProductTable");
 
-// const Product = require('../model/Product');
 
 exports.getAllProducts = async () => {
   try {
-    const allProducts = await Product_Table.query().select(
+    const allProducts = await ProductTable.query().select(
       'id',
       'productCode',
       'productName',
